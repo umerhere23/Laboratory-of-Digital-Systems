@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform Your Business Strategies</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <?php if (strpos($_SERVER['REQUEST_URI'], 'mdthesis.php') !== false): ?>
+        <link rel="stylesheet" href="/mdasyg/mdthesis.css">
+    <?php endif; ?>
 </head>
 <body>
 
@@ -12,7 +15,7 @@
         <div class="container">
             <div class="logo">
                 <a href="index.php">
-                    <img src="./assets/Images/logo.png" alt="logo">
+                    <img src="./assets/Images/logo-Photoroom.png" alt="logo">
                 </a>
             </div>
             <nav class="main-nav">

@@ -1,0 +1,20 @@
+.mainalone {
+    margin-bottom: 40px;
+}
+
+.title h3 {
+    font-size: 1.8rem;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.text ol {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.text li {
+    margin-bottom: 15px;
+} 

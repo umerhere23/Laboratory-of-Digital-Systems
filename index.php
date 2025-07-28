@@ -5,8 +5,8 @@
         <h1>Laboratory of Digital Systems and Computer Architecture</h1>
 
         <ul class="thesis-links">
-            <li><a href="#">List of available Diploma Thesis Topics</a></li>
-            <li><a href="#">List of supervised (in progress or completed) Diploma Thesis</a></li>
+            <li><a href="thesis.php">List of available Diploma Thesis Topics</a></li>
+            <li><a href="mdthesis.php">List of supervised (in progress or completed) Diploma Thesis</a></li>
         </ul>
 
         <p><a href="#">[A short laboratory description in Greek]</a></p>
