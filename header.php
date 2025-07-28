@@ -15,7 +15,7 @@
                     <img src="./assets/Images/logo.png" alt="logo">
                 </a>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul class="menu">
                     <li id="Home"><a href="/" class="parent"><span>Home</span></a></li>
                     <li id="Equipment"><a href="/equip.php"><span>Laboratory Equipment</span></a></li>
@@ -85,8 +85,11 @@
                     </li>
                 </ul>
             </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header> 
-<main>
-
-</main> 
+<main> 
