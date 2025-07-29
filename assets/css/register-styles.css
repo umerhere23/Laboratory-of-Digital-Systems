@@ -1,0 +1,98 @@
+/* assets/css/register-styles.css */
+
+body {
+    background: #0d1e3d;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.register-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.top-buttons {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.btn-top {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #f0f2f5;
+    border: 1px solid #a9b8c2;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #0d1e3d;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.register-box {
+    background-color: #eaf0f2;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.register-box h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #0d1e3d;
+}
+
+.fields-required {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.register-box .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.register-box .form-group label {
+    width: 150px;
+}
+
+.register-box .form-group label span {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.register-box .form-group input,
+.register-box .form-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.register-box .form-submit {
+    text-align: right;
+}
+
+.register-box button {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+
+.info-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+} 

@@ -1,104 +1,131 @@
 /* assets/css/schedule-index-styles.css */
 
-.schedule-page-content {
-    background-color: #f8f9fa;
-    padding: 50px 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.schedule-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.schedule-header h1 {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 30px;
-    color: #2c3e50;
-    font-weight: 700;
+body {
+    background: #eaf0f2;
     font-family: 'Poppins', sans-serif;
 }
 
-.schedule-form-container {
-    margin-bottom: 40px;
-    text-align: center;
+.login-page-content {
+    padding: 40px 20px;
 }
 
-.schedule-form-container form {
+.page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notification-bar {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #444;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.login-options {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
 }
 
-.schedule-form-container label {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.schedule-form-container input[type="date"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.schedule-form-container input[type="submit"] {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.schedule-form-container input[type="submit"]:hover {
-    background-color: #2980b9;
-}
-
-.schedule-table-container {
-    overflow-x: auto;
-}
-
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.schedule-table th, .schedule-table td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.schedule-table thead {
-    background-color: #34495e;
-    color: #fff;
-}
-
-.schedule-table tbody tr:hover {
-    background-color: #f2f2f2;
-}
-
-.back-button-container {
+.login-option-link {
+    flex: 1;
+    padding: 12px;
     text-align: center;
-    margin-top: 40px;
-}
-
-.back-button {
     text-decoration: none;
-    color: #fff;
-    background-color: #7f8c8d;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #555;
+    background-color: #f7f9fa;
+    transition: all 0.3s ease;
 }
 
-.back-button:hover {
-    background-color: #6c7a7d;
+.login-option-link.active {
+    background-color: #fff;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-form label {
+    width: 100px;
+    font-weight: 500;
+    color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+}
+
+.remember-me {
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form-submit button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.message-box {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 8px;
+    background-color: #f7f9fa;
+}
+
+.login-links {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.login-links a {
+    color: #3498db;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
 } 

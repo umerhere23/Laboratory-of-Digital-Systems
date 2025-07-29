@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform Your Business Strategies</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    
     <?php 
     $request_uri = $_SERVER['REQUEST_URI'];
-    if (strpos($request_uri, 'mdthesis.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/mdthesis.css">
+    $is_schedule_index = strpos($request_uri, 'i-time-slot.php') !== false;
+
+    // Define the base path for assets
+    $base_path = $is_schedule_index ? './' : './';
+    ?>
+
+    <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/style.css">
+
+    <?php
+    if ($is_schedule_index) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/schedule-index-styles.css">
+    <?php } elseif (strpos($request_uri, 'mdthesis.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/mdthesis.css">
     <?php } elseif (strpos($request_uri, 'thesis.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/thesis-styles.css">
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/thesis-styles.css">
     <?php } elseif (strpos($request_uri, 'arch_lab_description_greek.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/arch_lab_description_greek.css">
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/arch_lab_description_greek.css">
     <?php } elseif (strpos($request_uri, 'lessons.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/lessons-styles.css">
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/lessons-styles.css">
     <?php } elseif (strpos($request_uri, 'equip.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/equip-styles.css">
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/equip-styles.css">
     <?php } elseif (strpos($request_uri, 'schedule.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/schedule-styles.css">
-    <?php } elseif (strpos($request_uri, 'schedule/index.php') !== false) { ?>
-        <link rel="stylesheet" href="./assets/css/schedule-index-styles.css">
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/schedule-styles.css">
+    <?php } elseif (strpos($request_uri, 'i-time-slot.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/schedule-index-styles.css">
+    <?php } elseif (strpos($request_uri, 'reset-password.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/reset-password-styles.css">
+    <?php } elseif (strpos($request_uri, 'register.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/register-styles.css">
     <?php } ?>
 </head>
 <body>
@@ -39,7 +54,7 @@
                     <li id="Schedule" class="has-dropdown"><a href="/schedule.php" ><span>Lab iTools</span></a>
                         <ul>
                             <li> <a href="schedule.php" ><span>Laboratory Availability</span></a></li>
-                            <li> <a href="schedule/index.php"> <span> Laboratory i-timeslots </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-timeslots </span></a></li>
                             <li> <a href="/igrades/index.php"> <span> Laboratory i-grades </span></a></li>
                             <li> <a href="/iexamsII/index.php"> <span> Laboratory i-examsII </span></a></li>
                             <li> <a href="/iexamsII/tests.php "> <span> Laboratory FREE i-examsII </span></a></li>
