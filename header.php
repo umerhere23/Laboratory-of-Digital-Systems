@@ -17,6 +17,10 @@
         <link rel="stylesheet" href="./assets/css/lessons-styles.css">
     <?php } elseif (strpos($request_uri, 'equip.php') !== false) { ?>
         <link rel="stylesheet" href="./assets/css/equip-styles.css">
+    <?php } elseif (strpos($request_uri, 'schedule.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/schedule-styles.css">
+    <?php } elseif (strpos($request_uri, 'schedule/index.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/schedule-index-styles.css">
     <?php } ?>
 </head>
 <body>
@@ -34,8 +38,8 @@
                     <li id="Equipment"><a href="equip.php"><span>Laboratory Equipment</span></a></li>
                     <li id="Schedule" class="has-dropdown"><a href="/schedule.php" ><span>Lab iTools</span></a>
                         <ul>
-                            <li> <a href="/schedule.php" ><span>Laboratory Availability</span></a></li>
-                            <li> <a href="/schedule/index.php"> <span> Laboratory i-timeslots </span></a></li>
+                            <li> <a href="schedule.php" ><span>Laboratory Availability</span></a></li>
+                            <li> <a href="schedule/index.php"> <span> Laboratory i-timeslots </span></a></li>
                             <li> <a href="/igrades/index.php"> <span> Laboratory i-grades </span></a></li>
                             <li> <a href="/iexamsII/index.php"> <span> Laboratory i-examsII </span></a></li>
                             <li> <a href="/iexamsII/tests.php "> <span> Laboratory FREE i-examsII </span></a></li>
