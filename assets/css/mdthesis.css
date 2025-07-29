@@ -1,0 +1,157 @@
+/* mdthesis.css */
+/* General Body and Container */
+.container {
+    padding: 20px;
+     margin: 0 auto;
+}
+
+/* Introductory text styling */
+.container > .text {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #007bff;
+}
+
+.container > .text p {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.container > .text a {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.emfasislink {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff !important;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.emfasislink:hover {
+    background-color: #0056b3;
+}
+
+/* Main content area for theses */
+.cube {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.mainalone {
+    flex: 1 1 45%;
+    min-width: 320px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainalone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.mainalone .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    color: #343a40;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007bff;
+}
+
+.mainalone .text > p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Styling for thesis lists */
+.mainalone .text ol {
+    list-style: none;
+    padding: 0;
+}
+
+.mainalone .text li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-left: 4px solid #17a2b8;
+    line-height: 1.6;
+}
+
+.mainalone .text li a {
+    color: #0056b3;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mainalone .text li a:hover {
+    text-decoration: underline;
+}
+
+/* Links for thesis documents (PDF, HTML, etc.) */
+.thesis-resources {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.thesis-resources a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #495057;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.thesis-resources a:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.thesis-resources img {
+    transition: transform 0.3s ease;
+}
+
+.thesis-resources a:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .cube {
+        flex-direction: column;
+    }
+    .mainalone {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .mainalone .title {
+        font-size: 1.5rem;
+    }
+}

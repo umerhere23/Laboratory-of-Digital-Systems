@@ -1,0 +1,142 @@
+/* assets/css/lessons-styles.css */
+
+.courses-page-content {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.courses-container {
+     margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.courses-header h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.courses-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.courses-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.courses-list li {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.courses-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.course-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.course-links a {
+    margin-left: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.course-links a:hover {
+    text-decoration: underline;
+}
+
+.course-details {
+    color: #555;
+    line-height: 1.6;
+}
+
+.semester {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.past-course {
+    background-color: #f2f2f2;
+    opacity: 0.8;
+}
+
+.past-course .course-title {
+    text-decoration: line-through;
+}
+
+.additional-info {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border-left: 5px solid #e74c3c;
+}
+
+.additional-info p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.tools-list {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.tools-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.tools-list a {
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .courses-container {
+        padding: 25px;
+    }
+
+    .course-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .course-title {
+        margin-bottom: 10px;
+    }
+} 

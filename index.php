@@ -9,7 +9,7 @@
             <li><a href="mdthesis.php">List of supervised (in progress or completed) Diploma Thesis</a></li>
         </ul>
 
-        <p><a href="#">[A short laboratory description in Greek]</a></p>
+        <p><a href="arch_lab_description_greek.php">[A short laboratory description in Greek]</a></p>
 
         <p>The Laboratory of Digital Systems and Computer Architecture fulfills all the educational and research needs both in core courses as well as in specialized courses of the Department of Electrical and Computer Engineering, in the University of Western Macedonia, Greece.</p>
 

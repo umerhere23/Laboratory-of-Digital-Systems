@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform Your Business Strategies</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <?php if (strpos($_SERVER['REQUEST_URI'], 'mdthesis.php') !== false): ?>
-        <link rel="stylesheet" href="/mdasyg/mdthesis.css">
-    <?php endif; ?>
+    <?php 
+    $request_uri = $_SERVER['REQUEST_URI'];
+    if (strpos($request_uri, 'mdthesis.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/mdthesis.css">
+    <?php } elseif (strpos($request_uri, 'thesis.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/thesis-styles.css">
+    <?php } elseif (strpos($request_uri, 'arch_lab_description_greek.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/arch_lab_description_greek.css">
+    <?php } elseif (strpos($request_uri, 'lessons.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/lessons-styles.css">
+    <?php } elseif (strpos($request_uri, 'equip.php') !== false) { ?>
+        <link rel="stylesheet" href="./assets/css/equip-styles.css">
+    <?php } ?>
 </head>
 <body>
 
@@ -20,8 +30,8 @@
             </div>
             <nav class="main-nav">
                 <ul class="menu">
-                    <li id="Home"><a href="/" class="parent"><span>Home</span></a></li>
-                    <li id="Equipment"><a href="/equip.php"><span>Laboratory Equipment</span></a></li>
+                    <li id="Home"><a href="index.php" class="parent"><span>Home</span></a></li>
+                    <li id="Equipment"><a href="equip.php"><span>Laboratory Equipment</span></a></li>
                     <li id="Schedule" class="has-dropdown"><a href="/schedule.php" ><span>Lab iTools</span></a>
                         <ul>
                             <li> <a href="/schedule.php" ><span>Laboratory Availability</span></a></li>
@@ -45,7 +55,7 @@
         
                     <li id="Academic" class="has-dropdown"><a href="/academic.php" ><span>Academic</span></a>
                         <ul>
-                            <li><a href="/courses.php" ><span>Courses</span></a></li>
+                            <li><a href="lessons.php" ><span>Courses</span></a></li>
                             <li><a href="/thesis.php" ><span>Diploma Thesis</span></a></li>
                             <li><a href="/documents.php"><span>Document produced by laboratory students (mostly in greek)</span></a></li>
                             <li><a href="/projects.php"><span>Indicative Projects with detailed description</span></a></li>
