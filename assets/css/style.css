@@ -77,8 +77,60 @@ ul {
 }
 
 .main-content p {
-    line-height: 1.8;
-    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Latest News Section */
+.latest-news {
+    margin-top: 40px;
+}
+
+.latest-news h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.news-item h3 {
+    margin-top: 0;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Research Areas Section */
+.research-areas {
+    margin-top: 40px;
+}
+
+.research-areas h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.area-card {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
 }
 
 .thesis-links {
@@ -131,34 +183,6 @@ ul {
     text-decoration: none;
     color: #c0392b;
     font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: #aeb9c0;
-    padding: 30px 0;
-    border-top: 4px solid #c0392b;
-}
-
-.footer-bottom {
-    text-align: center;
-}
-
-.footer-bottom p {
-    margin: 0;
-    color: #aeb9c0;
-    line-height: 1.6;
-}
-
-.footer-bottom a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.footer-bottom a:hover {
-    text-decoration: underline;
 }
 
 /* Header */
