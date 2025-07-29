@@ -42,6 +42,12 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/dpa-styles.css">
     <?php } elseif (strpos($request_uri, 'tests.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/tests.css">
+    <?php } elseif (strpos($request_uri, 'ievaluation.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/ievaluation.css">
+    <?php } elseif (strpos($request_uri, 'position.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/position-styles.css">
+    <?php } elseif (strpos($request_uri, 'polls.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/polls.css">
     <?php } ?>
 </head>
 <body>
@@ -64,17 +70,17 @@
                             <li> <a href="i-time-slot.php"> <span> Laboratory i-grades </span></a></li>
                             <li> <a href="#"> <span> Laboratory i-examsII </span></a></li>
                             <li> <a href="tests.php "> <span> Laboratory FREE i-examsII </span></a></li>
-                            <li> <a href="/ipresence/index.php"> <span> Laboratory i-presence </span></a></li>
-                            <li> <a href="/itasks/index.php"> <span> Laboratory i-tasks </span></a></li>
-                            <li> <a href="/ilottery/index.php"> <span> Laboratory i-lottery </span></a></li>
-                            <li> <a href="/ipolls/index.php"> <span> Laboratory i-polls </span></a></li>
-                            <li> <a href="/iloan/index.php"> <span> Laboratory i-loan </span></a></li>
-                            <li> <a href="/iquiz/index.php"> <span> Laboratory i-quiz </span></a></li>
-                            <li> <a href="/ievaluation"><span> Laboratory i-evaluation </span></a></li>
-                            <li> <a href="/quickshare"> <span> Quickshare </span></a></li>
-                            <li> <a href="/administration/index.php?side_menu=view_users"><span> Laboratory Admin </span></a></li>
-                            <li> <a href="/iposition"> <span> iposition internship </span></a></li>
-                            <li> <a href="/alumni"><span> UOWM Alumni </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-presence </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-tasks </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-lottery </span></a></li>
+                            <li> <a href="polls.php"> <span> Laboratory i-polls </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-loan </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-quiz </span></a></li>
+                            <li> <a href="ievaluation.php"><span> Laboratory i-evaluation </span></a></li>
+                            <li> <a href="https://share.uowm.gr/"> <span> Quickshare </span></a></li>
+                            <li> <a href="i-time-slot.php"><span> Laboratory Admin </span></a></li>
+                            <li> <a href="position.php"> <span> iposition internship </span></a></li>
+                            <li> <a href="i-time-slot.php"><span> UOWM Alumni </span></a></li>
                         </ul>
                     </li>
         

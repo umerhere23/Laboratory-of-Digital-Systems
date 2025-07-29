@@ -1,0 +1,57 @@
+/* assets/css/ievaluation.css */
+
+.ievaluation-content {
+    padding: 40px 20px;
+}
+
+.welcome-heading {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info-plaisio {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.info-plaisio p {
+    margin-bottom: 20px;
+}
+
+.anonymous-link-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.anonymous-questionnaires-link {
+    color: #c0392b;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.anonymous-questionnaires-link:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .welcome-heading {
+        font-size: 1.5rem;
+    }
+
+    .info-plaisio {
+        padding: 20px;
+    }
+
+    .anonymous-questionnaires-link {
+        font-size: 1.2rem;
+    }
+}
