@@ -1,0 +1,39 @@
+/* assets/css/tests.css */
+
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tests-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.tests-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.notice-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.notice-box h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.notice-box a {
+    color: #0056b3;
+    text-decoration: underline;
+}

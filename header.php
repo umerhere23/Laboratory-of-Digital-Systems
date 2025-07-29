@@ -36,6 +36,12 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/reset-password-styles.css">
     <?php } elseif (strpos($request_uri, 'register.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/register-styles.css">
+    <?php } elseif (strpos($request_uri, 'printschedule.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/printschedule-styles.css">
+    <?php } elseif (strpos($request_uri, 'dpa.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/dpa-styles.css">
+    <?php } elseif (strpos($request_uri, 'tests.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/tests.css">
     <?php } ?>
 </head>
 <body>
@@ -55,9 +61,9 @@
                         <ul>
                             <li> <a href="schedule.php" ><span>Laboratory Availability</span></a></li>
                             <li> <a href="i-time-slot.php"> <span> Laboratory i-timeslots </span></a></li>
-                            <li> <a href="/igrades/index.php"> <span> Laboratory i-grades </span></a></li>
-                            <li> <a href="/iexamsII/index.php"> <span> Laboratory i-examsII </span></a></li>
-                            <li> <a href="/iexamsII/tests.php "> <span> Laboratory FREE i-examsII </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-grades </span></a></li>
+                            <li> <a href="#"> <span> Laboratory i-examsII </span></a></li>
+                            <li> <a href="tests.php "> <span> Laboratory FREE i-examsII </span></a></li>
                             <li> <a href="/ipresence/index.php"> <span> Laboratory i-presence </span></a></li>
                             <li> <a href="/itasks/index.php"> <span> Laboratory i-tasks </span></a></li>
                             <li> <a href="/ilottery/index.php"> <span> Laboratory i-lottery </span></a></li>

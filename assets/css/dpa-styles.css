@@ -1,0 +1,94 @@
+/* assets/css/dpa-styles.css */
+
+body {
+    background: #f4f7f6;
+    font-family: 'Georgia', serif;
+    color: #444;
+}
+
+.dpa-page-content {
+    padding: 50px 20px;
+}
+
+.dpa-container {
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.dpa-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #eef;
+    padding-bottom: 30px;
+}
+
+.language-notice {
+    font-style: italic;
+    color: #0056b3;
+    background-color: #e7f3ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dpa-header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+}
+
+.dpa-header h2 {
+    font-size: 1.6rem;
+    color: #34495e;
+    font-weight: normal;
+}
+
+.dpa-section {
+    margin-bottom: 35px;
+}
+
+.dpa-section h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dpa-section p, .dpa-section li {
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.dpa-section ul, .dpa-section ol {
+    padding-left: 25px;
+}
+
+.dpa-section li {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 3px solid #3498db;
+}
+
+@media (max-width: 768px) {
+    .dpa-container {
+        padding: 30px;
+    }
+
+    .dpa-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .dpa-header h2 {
+        font-size: 1.3rem;
+    }
+} 

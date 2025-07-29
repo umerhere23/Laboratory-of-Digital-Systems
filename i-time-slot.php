@@ -39,9 +39,9 @@
             <div class="login-links">
                 <p><a href="https://sso.uowm.gr/login?service=https%3A%2F%2Farch.ece.uowm.gr%2Faccount%2F">Register/Join/Εγγραφή</a></p>
                 <p><a href="reset-password.php">Forgot Password, Request Password Reset, Remind Username, Resend Activation Email</a></p>
-                <p><a href="#">Προβολή όλων των χρονοθυρίδων</a></p>
+                <p><a href="printschedule.php">Προβολή όλων των χρονοθυρίδων</a></p>
                 <p><a href="#">Αποσύνδεση</a></p>
-                <p><a href="#">Δήλωση προσωπικών δεδομένων</a></p>
+                <p><a href="dpa.php">Δήλωση προσωπικών δεδομένων</a></p>
             </div>
         </div>
         
