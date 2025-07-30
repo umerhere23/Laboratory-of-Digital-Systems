@@ -1,0 +1,54 @@
+/* Styling for icte_strike.php */
+.content-container {
+    max-width: 95%; /* Adjust as needed to match overall site content width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding around the content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    line-height: 1.6;
+}
+
+.content-container h1, .content-container h2, .content-container h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-container h1 {
+    font-size: 2.5em;
+}
+
+.content-container h2 {
+    font-size: 2em;
+}
+
+.content-container h3 {
+    font-size: 1.5em;
+}
+
+.content-container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Remove the old div styling as they are no longer in the HTML */
+#topleft,
+#topright,
+#picker {
+    display: none;
+}
+
+/* Styling for specific text sections */
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}

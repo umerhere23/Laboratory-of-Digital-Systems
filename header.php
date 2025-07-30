@@ -60,6 +60,16 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/labachievement.css">
     <?php } elseif (strpos($request_uri, 'breadmaker2015.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/breadmaker2015.css">
+    <?php } elseif (strpos($request_uri, 'icte_strike.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/icte_strike.css">
+    <?php } elseif (strpos($request_uri, 'smart_car2017.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/smart_car2017.css">
+    <?php } elseif (strpos($request_uri, 'lego_robot_guide2017.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/lego_robot_guide2017.css">
+    <?php } elseif (strpos($request_uri, 'drawingbot2017.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/drawingbot2017.css">
+    <?php } elseif (strpos($request_uri, 'pong_iphone2018.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/pong_iphone2018.css">
     <?php } ?>
 </head>
 <body>

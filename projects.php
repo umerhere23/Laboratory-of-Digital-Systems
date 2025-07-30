@@ -30,12 +30,12 @@
         <div class="project-card">
             <h3>Smart Car/Follower</h3>
             <p>An autonomous vehicle that can follow lines and avoid obstacles. Features an alpha and enhanced version.</p>
-            <a href="projects/smart_car2017/" class="project-link">View Project</a>
+            <a href="smart_car2017.php" class="project-link">View Project</a>
         </div>
         <div class="project-card">
             <h3>Guidance System for Visual Impairment</h3>
             <p>A guidance system for the visually impaired, developed using LEGO Mindstorms EV3.</p>
-            <a href="projects/lego_robot_guide2017/" class="project-link">View Project</a>
+            <a href="lego_robot_guide2017.php" class="project-link">View Project</a>
         </div>
         <div class="project-card">
             <h3>Wi-Fi & Bluetooth Drawing Robot</h3>
