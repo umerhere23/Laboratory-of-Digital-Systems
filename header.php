@@ -56,6 +56,10 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/lightgame.css">
     <?php } elseif (strpos($request_uri, 'uowm_masacre.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/uowm_masacre.css">
+    <?php } elseif (strpos($request_uri, 'labachievement.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/labachievement.css">
+    <?php } elseif (strpos($request_uri, 'breadmaker2015.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/breadmaker2015.css">
     <?php } ?>
 </head>
 <body>
@@ -98,7 +102,7 @@
                             <li><a href="thesis.php" ><span>Diploma Thesis</span></a></li>
                             <li><a href="documents.php"><span>Document produced by laboratory students (mostly in greek)</span></a></li>
                             <li><a href="projects.php"><span>Indicative Projects with detailed description</span></a></li>
-                            <li><a href="/labachievement.php"><span>Laboratory Achievements</span></a></li>
+                            <li><a href="labachievement.php"><span>Laboratory Achievements</span></a></li>
                         </ul>
                     </li>
         

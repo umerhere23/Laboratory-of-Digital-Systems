@@ -20,7 +20,7 @@
         <div class="project-card">
             <h3>The IoT Breadmaker</h3>
             <p>A smart, internet-connected breadmaker for the modern kitchen.</p>
-            <a href="projects/breadmaker2015" class="project-link">View Project</a>
+            <a href="breadmaker2015.php" class="project-link">View Project</a>
         </div>
         <div class="project-card">
             <h3>ICTE Strike</h3>

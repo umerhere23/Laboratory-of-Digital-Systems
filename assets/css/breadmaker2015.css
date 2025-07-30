@@ -1,0 +1,140 @@
+/* General Styling for Project Detail Page */
+.project-detail-container {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.project-detail-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project-detail-header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+}
+
+.project-detail-header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-section {
+    margin-bottom: 40px;
+}
+
+.project-section h2 {
+    font-size: 2.2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.project-section h4 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.project-figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.project-figure figcaption {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin-bottom: 20px;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.bom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.bom-table th, .bom-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+.bom-table thead {
+    background-color: #34495e;
+    color: #fff;
+}
+.bom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.bom-table tfoot {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.download-links {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-download {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn-download:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.code-embed {
+    margin-top: 30px;
+}
+
+.code-embed iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
