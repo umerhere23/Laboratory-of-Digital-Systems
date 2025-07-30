@@ -1,4 +1,9 @@
 /* Styling for profile.php */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .content-container {
     display: flex;
     flex-wrap: wrap;
@@ -7,9 +12,10 @@
     margin: 40px auto; /* Center the container */
     padding: 30px; /* Add some padding around the content */
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    line-height: 1.8;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1); /* More pronounced shadow */
+    line-height: 1.8; /* Increased line-height for better readability */
+    animation: fadeIn 1s ease-out; /* Apply fade-in animation */
 }
 
 .main-content {
@@ -20,98 +26,143 @@
 .side-content {
     flex: 1; /* Takes less space */
     min-width: 250px; /* Ensure it doesn't get too small */
+    background-color: #f8f9fa; /* Light background for sidebar */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Subtle shadow for sidebar */
 }
 
 .main-content .title {
-    font-size: 2.8em;
+    font-size: 3em; /* Larger title */
     color: #2c3e50;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 800; /* Extra bold */
     text-align: center;
     padding-bottom: 15px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 3px solid #3498db; /* Thicker blue underline */
+    letter-spacing: 1.5px; /* Spacing for title */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Subtle text shadow */
 }
 
 .main-content .text {
-    margin-bottom: 20px;
-    color: #555;
+    margin-bottom: 25px; /* More space */
+    color: #444; /* Slightly darker text for readability */
+    font-size: 1.05em;
 }
 
 .main-content .imginmain {
     display: block;
-    margin: 20px auto; /* Center image */
-    max-width: 80%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 30px auto; /* Increased margin */
+    max-width: 90%; /* Slightly larger image */
+    height: auto;
+    border-radius: 10px; /* More rounded image corners */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* More pronounced shadow */
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother transition */
 }
 
 .main-content .imginmain:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: scale(1.02) translateY(-7px); /* Lift and slight scale on hover */
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25); /* Enhanced shadow on hover */
 }
 
 .main-content h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     color: #34495e;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 8px;
     display: inline-block;
+    position: relative; /* For pseudo-element underline */
+}
+
+.main-content h2::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #f39c12; /* Accent color for underline effect */
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease-out;
+}
+
+.main-content h2:hover::after {
+    width: 100%;
 }
 
 .main-content p {
-    margin-bottom: 20px;
-    color: #555;
+    margin-bottom: 25px; /* More space between paragraphs */
+    color: #444;
+    line-height: 1.7;
 }
 
 .main-content ul {
-    list-style-type: disc;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    list-style-type: none; /* Remove default bullets */
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 25px;
 }
 
 .main-content li {
-    margin-bottom: 8px;
-    background-color: #f9f9f9;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 12px; /* More space between list items */
+    background-color: #fdfdfd; /* Lighter background for list items */
+    padding: 15px 20px; /* More padding */
+    border-radius: 8px;
+    border: 1px solid #eee; /* Subtle border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* Lighter shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    position: relative;
+    padding-left: 40px; /* Space for custom bullet */
+}
+
+.main-content li::before {
+    content: '\2022'; /* Unicode bullet character */
+    color: #3498db; /* Blue bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; /* Space for bullet */
+    margin-left: -1em; /* Negative margin to pull bullet into padding */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-content li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-3px) scale(1.01); /* Lift and slight scale on hover */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    background-color: #f5f5f5;
 }
 
 .side-content .sidetitle {
-    font-size: 1.8em;
+    font-size: 2em; /* Larger sidebar title */
     color: #2c3e50;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e0e0e0;
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #aeb6bf; /* Subtle gray border */
 }
 
 .side-content .sidetext {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: #555;
+    font-size: 1em;
 }
 
 .side-content ul {
-    list-style-type: none; /* No bullets for contact info */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .side-content li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+    margin-bottom: 12px; /* More space */
+    line-height: 1.6;
+    color: #444;
+    font-size: 0.95em;
 }
 
 /* Common styles for links and text colors */
@@ -128,10 +179,12 @@ a:hover {
 
 .red-text {
     color: #e74c3c;
+    font-weight: bold;
 }
 
 .bold-text {
     font-weight: bold;
+    color: #333;
 }
 
 /* Responsive adjustments */
@@ -145,6 +198,18 @@ a:hover {
     .side-content {
         flex: none;
         width: 100%;
+    }
+
+    .main-content .title {
+        font-size: 2.2em;
+    }
+
+    .main-content h2 {
+        font-size: 1.8em;
+    }
+
+    .side-content .sidetitle {
+        font-size: 1.6em;
     }
 }
 

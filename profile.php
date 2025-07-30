@@ -39,7 +39,7 @@
 		<div class="text">
 			Resarch Gate:<div></div>
 			<a title="Minas Dasygenis" href="https://www.researchgate.net/profile/Minas_Dasygenis2/">
-			<img src="./assets/Images/profile_share_badge.png" alt="Minas Dasygenis" /></a>
+			<img src="./assets/Images/profile_share_badge.webp" alt="Minas Dasygenis" /></a>
 		</div>
 		
 		<div class="text">
