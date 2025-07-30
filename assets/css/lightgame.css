@@ -5,7 +5,8 @@ body {
 }
 
 .project-detail-container {
-     margin: 40px auto;
+    width: 90%;
+    margin: 40px auto;
     padding: 30px;
     background-color: #fff;
     border-radius: 8px;
@@ -27,6 +28,13 @@ body {
 .project-detail-header p {
     font-size: 1.2rem;
     color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .project-section {
@@ -100,6 +108,25 @@ body {
     text-align: center;
 }
 
+.btn-code {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-code:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
 .bom-table {
     width: 100%;
     border-collapse: collapse;
@@ -132,4 +159,7 @@ body {
 }
 .team-section a:hover {
     text-decoration: underline;
+}
+.team-info {
+    text-align: center;
 }

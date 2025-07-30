@@ -4,30 +4,33 @@
     <div class="project-detail-header">
         <h1>Lightgame Project</h1>
         <p>A multiplayer response game developed in Arduino.</p>
+        <a href="projects.php" class="back-link">← Back to Projects</a>
     </div>
 
     <section class="project-section">
         <figure class="project-figure">
-            <img src="./assets/Images/lightgame_3.jpg" alt="Lightgame overview" width="700">
+            <img src="./assets/Images/lightgame_3.jpg" alt="Lightgame overview">
             <figcaption>Overview of Lightgame where all the components are shown.</figcaption>
         </figure>
     </section>
 
     <section class="project-section team-section">
-        <h2>Development Team</h2>
-        <p>
-            <a href="https://www.linkedin.com/profile/view?id=285066107">Efstathios Lymperidis</a><br>
-            <a href="https://www.linkedin.com/profile/view?id=243598472">Thodoris Bais</a>
-        </p>
-        <h3>Supervision</h3>
-        <p><a href="https://arch.ece.uowm.gr/mdasyg/index.php">Dr. Minas Dasygenis</a></p>
+        <div class="team-info">
+            <p><strong>Development Team:</strong><br>
+                <a href="https://www.linkedin.com/profile/view?id=285066107">Efstathios Lymperidis</a><br>
+                <a href="https://www.linkedin.com/profile/view?id=243598472">Thodoris Bais</a>
+            </p>
+            <p><strong>Supervision:</strong><br>
+                <a href="https://arch.ece.uowm.gr/mdasyg/index.php">Dr. Minas Dasygenis</a>
+            </p>
+        </div>
     </section>
 
     <section class="project-section">
         <h2>Introduction</h2>
         <p>Lightgame is a reaction game designed for four players. Each player has a button with one of the colors red, green, blue and yellow. At each round an RGB LED will light randomly one of those colors. If the player with the corresponding color presses their button, their score will be their reaction time in milliseconds. The player with the lower score is the winner.</p>
         <figure class="project-figure">
-            <img src="./assets/Images/lightgame_1.jpg" alt="The Lightgame setup" width="700">
+            <img src="./assets/Images/lightgame_1.jpg" alt="The Lightgame setup">
             <figcaption>At the left side there is the Slave arduino with its components and at the right side, the Master arduino responsible for the buttons and calculations.</figcaption>
         </figure>
     </section>
@@ -43,7 +46,7 @@
         <p>The Master commands the Slave to signal a new round, selects a random color, starts a timer, and enables the player buttons. An interrupt is used to calculate the reaction time and update the score when a button is pressed.</p>
 
         <figure class="project-figure">
-            <img src="./assets/Images/lightgame_5.jpg" alt="Lightgame's display system" width="700">
+            <img src="./assets/Images/lightgame_5.jpg" alt="Lightgame's display system">
             <figcaption>A closer look at the screen and buzzer on the left and the RGB LED on the right.</figcaption>
         </figure>
 
@@ -79,7 +82,7 @@
         <h2>Lightgame Schematic</h2>
         <figure class="project-figure">
             <a href="./assets/Images/lightgame_schematic.jpg">
-                <img src="./assets/Images/lightgame_schematic.jpg" alt="Lightgame schematic" width="700">
+                <img src="./assets/Images/lightgame_schematic.jpg" alt="Lightgame schematic">
             </a>
             <figcaption><a href="projects/lightgame2014/repository/lightgame_schematic.zip">Download detailed Schematic.</a></figcaption>
         </figure>
@@ -122,26 +125,5 @@
     </section>
 
 </div>
-
-<style>
-    .btn-code {
-        display: inline-block;
-        background: #3498db;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .btn-code:hover {
-        background: #2980b9;
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        color: #fff;
-    }
-</style>
 
 <?php include('footer.php'); ?>
