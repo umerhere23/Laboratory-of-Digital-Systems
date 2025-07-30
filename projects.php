@@ -40,7 +40,7 @@
         <div class="project-card">
             <h3>Wi-Fi & Bluetooth Drawing Robot</h3>
             <p>A robot capable of drawing images, controlled wirelessly via Wi-Fi and Bluetooth.</p>
-            <a href="projects/drawingbot2017/" class="project-link">View Project</a>
+            <a href="drawingbot2017.php" class="project-link">View Project</a>
         </div>
         <div class="project-card">
             <h3>Pong for iPhone</h3>

@@ -1,17 +1,19 @@
 /* Styling for drawingbot2017.php */
 .content-container {
-    max-width: 95%; /* Consistent with other project pages */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add some padding around the content */
+    max-width: 90%; /* Consistent with other project pages */
+    margin: 40px auto; /* Increased margin for better separation */
+    padding: 30px; /* Increased padding for better spacing, similar to project-card */
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Consistent with project-card shadow */
+    line-height: 1.8; /* Increased line-height for better readability */
 }
 
 .content-container .title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin for better separation */
+    padding-bottom: 20px; /* Added padding */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator, similar to projects-header */
 }
 
 .content-container h2, .content-container h5 {
@@ -19,39 +21,50 @@
     color: #2c3e50;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700; /* Slightly bolder for emphasis */
 }
 
 .content-container h2 {
-    font-size: 2.2em;
+    font-size: 2.5em; /* Adjusted for larger headings, similar to projects-header h1 */
 }
 
 .content-container h5 {
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .content-container .h4 {
-    font-size: 1.5em;
+    font-size: 1.6em; /* Slightly larger for emphasis */
     font-weight: 600;
-    color: #2c3e50;
-    margin-top: 20px;
+    color: #34495e; /* Darker color for section titles, similar to project-card h3 */
+    margin-top: 30px; /* More space above section titles */
+    margin-bottom: 15px;
     display: block;
+    border-bottom: 2px solid #3498db; /* Blue underline consistent with projects.css */
+    padding-bottom: 5px;
+    display: inline-block; /* To make border-bottom apply only to text width */
 }
 
 .content-container img,
 .content-container iframe {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto; /* Increased margin for better spacing */
     max-width: 100%;
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Slightly rounded corners for media */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Consistent with projects.css card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover */
+}
+
+.content-container img:hover,
+.content-container iframe:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
 }
 
 .content-container .small-text {
-    font-size: 0.8em;
-    color: #555;
+    font-size: 0.9em; /* Slightly larger for better readability */
+    color: #7f8c8d; /* Muted color for sub-text, similar to projects-header p */
 }
 
 .content-container .center {
@@ -62,43 +75,70 @@
 .content-container table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 30px 0; /* More vertical space for tables */
 }
 
 .content-container th,
 .content-container td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px; /* Increased padding for table cells */
     text-align: left;
 }
 
 .content-container th {
     background-color: #f2f2f2;
     font-weight: bold;
+    color: #34495e; /* Consistent with other headings */
 }
 
 .content-container p {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* More space between paragraphs */
+    color: #555; /* Consistent with project-card p */
 }
 
-.content-container ul {
+.content-container ul,
+.content-container ol {
     list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin-left: 30px; /* Increased indent for lists */
+    margin-bottom: 20px;
 }
 
 .content-container li {
-    margin-bottom: 5px;
+    margin-bottom: 8px; /* More space between list items */
+    background-color: #f9f9f9; /* Light background for list items */
+    padding: 10px 15px; /* Padding for better spacing inside list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for list items */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover */
+}
+
+.content-container li:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
 }
 
 /* Ensure links within content are styled consistently */
 .content-container a {
-    color: #007bff;
+    color: #3498db; /* Consistent link color from projects.css */
     text-decoration: none;
+    transition: color 0.3s ease; /* Added transition for hover */
 }
 
 .content-container a:hover {
+    color: #2980b9; /* Darker blue on hover */
     text-decoration: underline;
+}
+
+.content-container .red-text {
+    color: #e74c3c; /* Red color for specific text */
+}
+
+.content-container .green-text {
+    color: #27ae60; /* Green color for specific text */
+}
+
+.content-container .bold-text {
+    font-weight: bold;
 }
 
 /* Remove the old div styling if they exist in this file */

@@ -12,73 +12,73 @@
 		<p>
 			<span class="center">
 				<img src="./assets/Images/menu_play.png" alt="Menu Play"/>
-				<br/>
+				<div></div>
 				<span class="small-text">Game Main Menu</span>
 			</span>
-			<br/><br/>
-			Development Team:<br/>
-			Vasileios Terzis <br/>
+			<div></div><div></div>
+			Development Team:<div></div>
+			Vasileios Terzis <div></div>
 			
-			<br/><br/>
-			Supervision : <br/>
+			<div></div><div></div>
+			Supervision : <div></div>
 			<a href="https://arch.ece.uowm.gr/mdasyg/index.php">Dr. Minas Dasygenis</a>
-			<br/>
-			<br/>
+			<div></div>
+			<div></div>
 			<span class="h4">Introduction</span>
-			<br/><br/>
+			<div></div>
 			PONG for iPhone is a mobile game for the iOS platform. It is a remake of the classic Pong game, with improved graphics and new features. The game is developed in Swift with SpriteKit framework. The game features single player and multiplayer modes, power-ups, and different game modes.
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Game Play</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="center">
 				<iframe src="https://www.youtube.com/embed/pong_iphone_video_url"></iframe>
-				<br/>
+				<div></div>
 				<span class="small-text">Game Play Video</span>
 			</span>
 			
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Screenshots</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="center">
 				<img src="./assets/Images/gameplay_1.png" alt="Gameplay 1"/>
-				<br/>
+				<div></div>
 				<span class="small-text">Gameplay Screenshot 1</span>
 			</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="center">
 				<img src="./assets/Images/gameplay_2.png" alt="Gameplay 2"/>
-				<br/>
+				<div></div>
 				<span class="small-text">Gameplay Screenshot 2</span>
 			</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="center">
 				<img src="./assets/Images/gameplay_3.png" alt="Gameplay 3"/>
-				<br/>
+				<div></div>
 				<span class="small-text">Gameplay Screenshot 3</span>
 			</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Download</span>
-			<br/><br/>
+			<div></div><div></div>
 			<a href="./assets/pong_iphone2018/PONG_iPhone.zip">Download Game (iOS)</a>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Presentation</span>
-			<br/><br/>
+			<div></div><div></div>
 			<a href="./assets/pong_iphone2018/pres_pong_angles_Terzi_1238_2018.pdf">Download Presentation (PDF)</a>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Source Code</span>
-			<br/><br/>
+			<div></div><div></div>
 			<a href="./assets/pong_iphone2018/source_code.zip">Download Source Code (Xcode Project)</a>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Video Review from a Professional Gamer</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="center">
 				<iframe src="https://www.youtube.com/embed/mh4pL9x6t-s"></iframe>
-				<br/>
+				<div></div>
 				<span class="small-text">Trusteft's Video Review</span>
 			</span>
-			<br/><br/>
+			<div></div><div></div>
 			<span class="h4">Bill of Materials</span>
-			<br/><br/>
+			<div></div><div></div>
 			<table>
 				<thead>
 					<tr>

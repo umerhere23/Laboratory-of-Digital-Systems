@@ -111,105 +111,173 @@ body {
 }
 
 /* Styling for uowm_masacre.php */
-.content-container {
-    max-width: 95%; /* Consistent with other project pages */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add some padding around the content */
+.game-detail-container {
+    max-width: 90%; /* Consistent with other project pages */
+    margin: 40px auto; /* Increased margin for better separation */
+    padding: 30px; /* Increased padding for better spacing, similar to project-card */
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Consistent with project-card shadow */
+    line-height: 1.8; /* Increased line-height for better readability */
 }
 
-.content-container .title {
+.game-title-section {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin for better separation */
+    padding-bottom: 20px; /* Added padding */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator, similar to projects-header */
 }
 
-.content-container h2, .content-container h5 {
-    text-align: center;
+.game-title-section h1 {
+    font-size: 2.8em;
     color: #2c3e50;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-.content-container h2 {
-    font-size: 2.2em;
+.game-title-section h2,
+.game-title-section h3 {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-.content-container h5 {
+.game-section {
+    margin-bottom: 30px; /* Space between sections */
+    padding-top: 10px;
+}
+
+.game-section h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db; /* Blue underline consistent with projects.css */
+    padding-bottom: 5px;
+    display: inline-block; /* To make border-bottom apply only to text width */
+}
+
+.game-section h4 {
     font-size: 1.2em;
-    font-weight: 400;
-}
-
-.content-container .h4 {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #2c3e50;
+    color: #555;
     margin-top: 20px;
-    display: block;
+    margin-bottom: 10px;
 }
 
-.content-container img,
-.content-container iframe,
-.content-container video {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Slightly rounded corners for media */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.content-container .small-text {
-    font-size: 0.8em;
+.game-section p {
+    margin-bottom: 15px;
     color: #555;
 }
 
-.content-container .center {
+.game-image {
     display: block;
-    text-align: center;
+    margin: 25px auto; /* Center image and add spacing */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Consistent with projects.css card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover */
 }
 
-.content-container table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+.game-image:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
 }
 
-.content-container th,
-.content-container td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images in the gallery */
+    gap: 20px; /* Space between images */
+    margin: 30px 0;
 }
 
-.content-container th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+.image-gallery .game-image {
+    flex: 1 1 calc(50% - 20px); /* Two images per row on larger screens, with gap */
+    max-width: calc(50% - 20px);
+    margin: 0; /* Override individual image margin */
 }
 
-.content-container p {
-    margin-bottom: 15px;
+@media (max-width: 768px) {
+    .image-gallery .game-image {
+        flex: 1 1 100%; /* One image per row on smaller screens */
+        max-width: 100%;
+    }
 }
 
-.content-container ul {
+.weapon-list {
     list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 
-.content-container li {
-    margin-bottom: 5px;
+.weapon-list li {
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Ensure links within content are styled consistently */
-.content-container a {
-    color: #007bff;
+.weapon-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.game-detail-container ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.game-detail-container ul li {
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-detail-container ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-bottom: 15px; /* For stacking on small screens */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.content-container a:hover {
+.btn-download:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+.download-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ensure consistent link styling */
+.game-detail-container a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.game-detail-container a:hover {
+    color: #2980b9;
     text-decoration: underline;
 }
