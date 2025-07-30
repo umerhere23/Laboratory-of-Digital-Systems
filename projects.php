@@ -46,10 +46,9 @@
             <h3>Pong for iPhone</h3>
             <p>A modern implementation of the classic Pong game for iOS devices.</p>
             <div class="project-sublinks">
-                <a href="projects/pong_iphone2018/pres_pong_angles_Terzi_1238_2018.pdf">Presentation</a>
-                <a href="projects/pong_iphone2018/pong_angles_preview.mp4">Video</a>
-                <a href="projects/pong_iphone2018/source_code.zip">Code</a>
-            </div>
+                <a href="https://arch.ece.uowm.gr/docs/deltio_typou_ifest2012.pdf">Presentation</a>
+                <a href="https://www.youtube.com/watch?v=MIS8XscixHU&feature=BFa&list=PLqWby4Xgxl3cWNUUWyliFHECHrmlEKJV_">Video</a>
+             </div>
         </div>
     </div>
 </div>

@@ -225,8 +225,10 @@ header nav ul li a {
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #f39c12;
+header nav ul li a:hover,
+header nav ul li.current > a,
+header nav ul li.active > a {
+    color: #f39c12; /* Highlight color for active/hovered top-level links */
 }
 
 header nav ul > li > a::after {
@@ -234,14 +236,16 @@ header nav ul > li > a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: 20px;
+    bottom: 15px; /* Adjusted to be slightly higher */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #007bff;
+    background-color: #f39c12; /* Consistent with hover color */
     transition: width 0.3s ease-in-out;
 }
 
-header nav ul > li > a:hover::after {
+header nav ul > li > a:hover::after,
+header nav ul > li.current > a::after,
+header nav ul > li.active > a::after {
     width: 100%;
 }
 
@@ -255,21 +259,22 @@ header nav ul > li > a:hover::after {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    min-width: 240px;
+    background-color: #2c3e50; /* Dark background for dropdowns */
+    border-radius: 6px; /* Slightly less rounded than cards */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /* Stronger shadow for depth */
+    min-width: 220px;
     z-index: 1000;
     padding: 10px 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: translateY(15px); /* Adjusted for smoother animation */
     transition: all 0.3s ease;
 }
 
 .menu ul ul {
     top: -10px;
     left: 100%;
+    background-color: #34495e; /* Slightly different background for nested dropdowns */
 }
 
 .menu li:hover > ul {
@@ -282,12 +287,15 @@ header nav ul > li > a:hover::after {
 .menu ul li a {
     padding: 12px 20px;
     display: block;
-    color: #333;
+    color: #ecf0f1; /* Light text color for dropdown items */
+    font-weight: 400;
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu ul li a:hover {
-    background-color: #f5f5f5;
-    color: #c0392b;
+    background-color: #3a4a5a; /* Lighter dark background on hover */
+    color: #f39c12; /* Highlight color on hover */
 }
 
 .menu ul li a::after {
@@ -296,17 +304,22 @@ header nav ul > li > a:hover::after {
 
 .has-dropdown > a > span {
     position: relative;
-    padding-right: 14px;
+    padding-right: 20px; /* Increased space for arrow */
 }
 
 .has-dropdown > a > span::after {
-    content: '▾';
-    font-size: 12px;
+    content: '\25BE'; /* Unicode down arrow character */
+    font-size: 14px; /* Larger arrow */
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    color: #f39c12;
+    color: #f39c12; /* Consistent with hover color */
+    transition: transform 0.3s ease;
+}
+
+.has-dropdown:hover > a > span::after {
+    transform: translateY(-50%) rotate(180deg); /* Rotate arrow on hover */
 }
 
 /* Hero Section */
@@ -414,10 +427,10 @@ header nav ul > li > a:hover::after {
     .menu ul {
         position: static;
         display: none;
-        background-color: transparent;
+        background-color: #2a3a4a; /* Darker background for mobile dropdowns */
         box-shadow: none;
         width: 100%;
-        padding-left: 20px;
+        padding-left: 0; /* Remove horizontal padding for full width */
     }
 
     .menu li:hover > ul {
@@ -426,11 +439,12 @@ header nav ul > li > a:hover::after {
 
     .menu ul li a {
         color: #bdc3c7;
-        padding-left: 30px;
+        padding-left: 40px; /* Increased padding for sub-items */
+        text-align: left; /* Align text to left */
     }
     
     .menu ul ul {
-        padding-left: 40px;
+        padding-left: 60px; /* Further increased padding for nested sub-items */
     }
 
     .menu-toggle {

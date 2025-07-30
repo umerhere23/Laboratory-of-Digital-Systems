@@ -70,6 +70,10 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/drawingbot2017.css">
     <?php } elseif (strpos($request_uri, 'pong_iphone2018.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/pong_iphone2018.css">
+    <?php } elseif (strpos($request_uri, 'hdl.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/hdl.css">
+    <?php } elseif (strpos($request_uri, 'profile.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/profile.css">
     <?php } ?>
 </head>
 <body>
@@ -118,7 +122,7 @@
         
                     <li id="Tools" class="has-dropdown"><a href="/tools.php"><span>Online Tools</span></a>
                         <ul>
-                         <li><a href="/hdl/"><span>HDL Compiler & various generators that emit VHDL</span></a></li>
+                         <li><a href="/hdl.php"><span>HDL Compiler & various generators that emit VHDL</span></a></li>
                         </ul>
                     </li>
         
@@ -126,7 +130,7 @@
                         <ul>
                             <li class="has-dropdown"><a href="/mdasyg/index.php"><span>Minas Dasygenis</span></a>
                                 <ul>
-                                    <li><a href="/mdasyg/index.php"><span>Introduction</span></a></li>
+                                    <li><a href="profile.php"><span>Introduction</span></a></li>
                                     <li><a href="/mdasyg/mdbackground.php"><span>Background</span></a></li>
                                     <li><a href="/mdasyg/mdresearch.php"><span>Research</span></a></li>
                                     <li><a href="/mdasyg/mdthesis.php"><span>Diploma Thesis Supervision</span></a></li>

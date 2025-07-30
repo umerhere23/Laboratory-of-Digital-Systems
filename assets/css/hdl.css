@@ -1,0 +1,67 @@
+/* Styling for hdl.php */
+.content-container {
+    max-width: 90%; /* Consistent with other project pages */
+    margin: 40px auto; /* Increased margin for better separation */
+    padding: 30px; /* Increased padding for better spacing, similar to project-card */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Consistent with project-card shadow */
+    line-height: 1.8; /* Increased line-height for better readability */
+}
+
+.content-container .title {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin for better separation */
+    padding-bottom: 20px; /* Added padding */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator, similar to projects-header */
+}
+
+.content-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Slightly bolder for emphasis */
+    font-size: 2.5em; /* Adjusted for larger headings, similar to projects-header h1 */
+}
+
+.content-container p {
+    margin-bottom: 20px; /* More space between paragraphs */
+    color: #555; /* Consistent with project-card p */
+}
+
+.content-container ul {
+    list-style-type: disc;
+    margin-left: 30px; /* Increased indent for lists */
+    margin-bottom: 20px;
+}
+
+.content-container li {
+    margin-bottom: 8px; /* More space between list items */
+    background-color: #f9f9f9; /* Light background for list items */
+    padding: 10px 15px; /* Padding for better spacing inside list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for list items */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover */
+}
+
+.content-container li:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
+}
+
+/* Ensure links within content are styled consistently */
+.content-container a {
+    color: #3498db; /* Consistent link color from projects.css */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Added transition for hover */
+}
+
+.content-container a:hover {
+    color: #2980b9; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+.content-container .red-text {
+    color: #e74c3c; /* Red color for specific text */
+}

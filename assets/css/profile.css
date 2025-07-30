@@ -1,0 +1,159 @@
+/* Styling for profile.php */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 95%; /* Adjusted for a wider layout if needed, match overall site content width */
+    margin: 40px auto; /* Center the container */
+    padding: 30px; /* Add some padding around the content */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    line-height: 1.8;
+}
+
+.main-content {
+    flex: 3; /* Takes more space */
+    min-width: 300px; /* Ensure it doesn't get too small */
+}
+
+.side-content {
+    flex: 1; /* Takes less space */
+    min-width: 250px; /* Ensure it doesn't get too small */
+}
+
+.main-content .title {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+}
+
+.main-content .text {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.main-content .imginmain {
+    display: block;
+    margin: 20px auto; /* Center image */
+    max-width: 80%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-content .imginmain:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.main-content h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.main-content ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.main-content li {
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-content li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.side-content .sidetitle {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.side-content .sidetext {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.side-content ul {
+    list-style-type: none; /* No bullets for contact info */
+    padding: 0;
+    margin: 0;
+}
+
+.side-content li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Common styles for links and text colors */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.red-text {
+    color: #e74c3c;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .main-content,
+    .side-content {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* Old div styling to hide */
+.topleft,
+.topright,
+.cube,
+.undercontainer,
+.bottomleft,
+.bottomright {
+    display: none;
+}
