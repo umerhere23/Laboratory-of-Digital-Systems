@@ -48,6 +48,8 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/position-styles.css">
     <?php } elseif (strpos($request_uri, 'polls.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/polls.css">
+    <?php } elseif (strpos($request_uri, 'documents.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/documents.css">
     <?php } ?>
 </head>
 <body>
@@ -87,8 +89,8 @@
                     <li id="Academic" class="has-dropdown"><a href="/academic.php" ><span>Academic</span></a>
                         <ul>
                             <li><a href="lessons.php" ><span>Courses</span></a></li>
-                            <li><a href="/thesis.php" ><span>Diploma Thesis</span></a></li>
-                            <li><a href="/documents.php"><span>Document produced by laboratory students (mostly in greek)</span></a></li>
+                            <li><a href="thesis.php" ><span>Diploma Thesis</span></a></li>
+                            <li><a href="documents.php"><span>Document produced by laboratory students (mostly in greek)</span></a></li>
                             <li><a href="/projects.php"><span>Indicative Projects with detailed description</span></a></li>
                             <li><a href="/labachievement.php"><span>Laboratory Achievements</span></a></li>
                         </ul>

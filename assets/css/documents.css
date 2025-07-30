@@ -1,0 +1,92 @@
+/* General Styling for Documents Page */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.documents-container {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.documents-header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.documents-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.documents-header .disclaimer,
+.documents-header .template-info {
+    font-size: 1rem;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.document-section {
+    margin-bottom: 40px;
+}
+
+.document-section h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+.document-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.document-list li {
+    background-color: #fdfdfd;
+    padding: 15px 20px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 12px;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.document-list li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left-color: #e67e22;
+}
+
+.document-list a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.document-list a:hover {
+    color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .documents-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .document-section h2 {
+        font-size: 1.8rem;
+    }
+}
