@@ -25,7 +25,7 @@
         <div class="project-card">
             <h3>ICTE Strike</h3>
             <p>An online FPS game in our university buildings, built with Unreal Engine, featuring bots and multiplayer.</p>
-            <a href="game/icte_strike/" class="project-link">Play Game</a>
+            <a href="icte_strike.php" class="project-link">Play Game</a>
         </div>
         <div class="project-card">
             <h3>Smart Car/Follower</h3>
