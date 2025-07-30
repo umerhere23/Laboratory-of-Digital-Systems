@@ -7,8 +7,8 @@
 	<div class="title">
 		<h2>UOWM MASSACRE: The Game</h2>
 		<h5>A free online FPS game based on the University of Western Macedonia</h5>
-	</div>
-	
+    </div>
+
 	<div class="text">
 	<p>
 			<span class="center">
@@ -116,7 +116,7 @@
 				</tbody>
 			</table>
 		</p>
-	</div>
+        </div>
 
 
 </div>

@@ -1,17 +1,19 @@
 /* Styling for smart_car2017.php */
 .content-container {
-    max-width: 95%; /* Adjusted from icte_strike.css based on user's recent change */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add some padding around the content */
+    max-width: 90%; /* Adjusted from 95% to 90% for consistency with projects-container */
+    margin: 40px auto; /* Increased margin for better separation */
+    padding: 30px; /* Increased padding for better spacing, similar to project-card */
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Consistent with project-card shadow */
+    line-height: 1.8; /* Increased line-height for better readability */
 }
 
 .content-container .title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increased margin for better separation */
+    padding-bottom: 20px; /* Added padding */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator, similar to projects-header */
 }
 
 .content-container h1, .content-container h2 {
@@ -19,11 +21,11 @@
     color: #2c3e50;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700; /* Slightly bolder for emphasis */
 }
 
 .content-container h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Adjusted for larger headings, similar to projects-header h1 */
 }
 
 .content-container h2 {
@@ -33,42 +35,73 @@
 .content-container img,
 .content-container video {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
     max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Slightly rounded corners for media */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Consistent with projects.css card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover */
+}
+
+.content-container img:hover,
+.content-container video:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
 }
 
 .content-container table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 30px 0; /* More vertical space for tables */
 }
 
 .content-container th,
 .content-container td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px; /* Increased padding for table cells */
     text-align: left;
 }
 
 .content-container th {
     background-color: #f2f2f2;
     font-weight: bold;
+    color: #34495e; /* Consistent with other headings */
 }
 
 .content-container p {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* More space between paragraphs */
+    color: #555; /* Consistent with project-card p */
+}
+
+.content-container ol {
+    list-style-type: decimal;
+    margin-left: 30px; /* Increased indent for lists */
+    margin-bottom: 20px;
+}
+
+.content-container li {
+    margin-bottom: 8px; /* More space between list items */
+    background-color: #f9f9f9; /* Light background for list items */
+    padding: 10px 15px; /* Padding for better spacing inside list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for list items */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover */
+}
+
+.content-container li:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
 }
 
 /* Ensure links within content are styled consistently */
 .content-container a {
-    color: #007bff;
+    color: #3498db; /* Consistent link color from projects.css */
     text-decoration: none;
+    transition: color 0.3s ease; /* Added transition for hover */
 }
 
 .content-container a:hover {
+    color: #2980b9; /* Darker blue on hover */
     text-decoration: underline;
 }
 

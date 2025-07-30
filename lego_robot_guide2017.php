@@ -11,25 +11,26 @@
 	<p>
 			<span class="center">
 				<img src="./assets/Images/pic_1.png" alt="Smart Car overview"/>
-				<br/>
+				<div></div>
 				<span class="small-text">Overview of lego system guidance full project.</span>
 			</span>
-			<br/><br/>
-			Development Team:<br/>
-			Aikaterini Mangiroglou <br/>
-			Christos Chaschatzis<br/>
-			Sotiria Papanikopoulou <br/><br/>
-			
-			Supervision : <br/>
+			<div></div>
+			<div></div>
+			Development Team:<div></div>
+			Aikaterini Mangiroglou <div></div>
+			Christos Chaschatzis<div></div>
+			Sotiria Papanikopoulou <div></div>
+			<div></div>
+			Supervision : <div></div>
 			<a href="https://arch.ece.uowm.gr/mdasyg/index.php">Dr. Minas Dasygenis</a>
-			<br/>
-			<br/>
+			<div></div>
+			<div></div>
 			<span class="h4">Introduction</span>
-			<br/><br/>
+			<div></div>
 			Lego system guidance is a wearable jacket made of lego ev3 and consists of three sensors and one intelligent brick which helps the user to understand if there is an object in front of him with the help of appropriate sounds. The project was made for the Festival <a href="http://www.i2fest.gr/">i2fest 2017.</a>
-			<br/><br/>
+			<div></div>
 			<span class="h4">Componets</span>
-			<br/><br/>
+			<div></div>
 			The guidance system consists of several Lego Mindstorm ev3 componets (LEGO MINDSTORMS Education EV3 Core Set).
 			<ul>
 				<li>Lego ev3 Intelligent brick x1</li>
@@ -47,37 +48,37 @@
 				<li>Connector bus x70</li>
 				<li>Other x40(plus extensions for smaller size)</li>
 			</ul>
-			<br/><br/>
+			<div></div>
 			
 			<span class="center">
 				<img src="./assets/Images/pic_2.jpg" alt="Lego System Guidance overview"/>
-				<br/>
+				<div></div>
 				<span class="small-text">Overview of Lego Sytsem Guidance where all types of the components are shown.</span>
 			</span>
-			<br/>
-			<br/>
+			<div></div>
+			<div></div>
 			<span class="h4">Project in action</span>
 			Initially, the project boot by pressing the touch sensor which is located on the front side of project. Then, 2 lego ev3 ultrasonic sensors which are located on the front side start to produce different  sounds. Τhe first one, has 90 degrees difference from the ground and produces an intermittent unique sound which tells the user it has an object in 50cm of him. More specifically, starts beeping from the 60cm and detects particularly large objects such as people, walls etc.The second, is adjustable i.e. the degrees of the sensor from the ground depending on the height of the user and and starts to produce sound from a distance of 160cm which is different from the first ultrasonic, as near approaching the user at obstacle so most frequently becomes the sound produced and in 35cm begins to sound a continuous sound, detects particularly small or medium objects such as desks, chairs,terrace etc.At the end, we can shut down the program with the touch sensor.
-			<span class="center"><br/><br/>
-			<span class="h3">Demonstration Video</span><br/><br/>
+			<span class="center"><div></div><div></div>
+			<span class="h3">Demonstration Video</span><div></div><div></div>
 
 			<iframe src="https://www.youtube.com/embed/4PbjBkIsZxc"></iframe>
 			or view it on <a href=https://www.youtube.com/watch?v=4PbjBkIsZxc> Youtube </a>
 
-			<br/><span class="h4">Lego ev3 mindstorm source code: </span> 
+			<div></div><span class="h4">Lego ev3 mindstorm source code: </span> 
 			<a href="./assets/Lego_Robot_Guide/Lego Robot Guide.ev3">Click here to download the code</a>
 			<span class="h4">Greek Poster at i2fest Computing Festival</span>
 			<a href="./assets/Lego_Robot_Guide/Lego Robot Guide.pptx"> i2fest Poster </a>
-			<br/>
-			<br/>
+			<div></div>
+			<div></div>
 		</p>
 	</div>
 	
 	<div class="title">
 	<h2>Bill of Materials</h2>
 	</div>
-	<p> Lego Mindstorms Education EV3 Core Set 45544 costs 470.36 € or you can buy it in pieces</p><br/>
-	<p> NOTICE! <i> is more expensive to buy separate the pieces than the whole set</i></p>
+	<p> Lego Mindstorms Education EV3 Core Set 45544 costs 470.36 € or you can buy it in pieces</p><div></div>
+	<p><span class="attention-text">NOTICE!</span> <i> is more expensive to buy separate the pieces than the whole set</i></p>
 	<div class="text">
 		<span class="small-text">( The listed prices are based on a greek distributor. )</span>
 		<table>
