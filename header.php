@@ -74,6 +74,10 @@
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/hdl.css">
     <?php } elseif (strpos($request_uri, 'profile.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/profile.css">
+    <?php } elseif (strpos($request_uri, 'background.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/background.css">
+    <?php } elseif (strpos($request_uri, 'mdresearch.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/mdresearch.css">
     <?php } ?>
 </head>
 <body>
@@ -131,8 +135,8 @@
                             <li class="has-dropdown"><a href="/mdasyg/index.php"><span>Minas Dasygenis</span></a>
                                 <ul>
                                     <li><a href="profile.php"><span>Introduction</span></a></li>
-                                    <li><a href="/mdasyg/mdbackground.php"><span>Background</span></a></li>
-                                    <li><a href="/mdasyg/mdresearch.php"><span>Research</span></a></li>
+                                    <li><a href="background.php"><span>Background</span></a></li>
+                                    <li><a href="mdresearch.php"><span>Research</span></a></li>
                                     <li><a href="/mdasyg/mdthesis.php"><span>Diploma Thesis Supervision</span></a></li>
                                     <li><a href="/mdasyg/mdaffiliations.php"><span>Affiliations</span></a></li>
                                     <li><a href="/mdasyg/mdpublications.php"><span>Publications</span></a></li>
