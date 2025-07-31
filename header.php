@@ -87,6 +87,8 @@
     <?php } ?>
     <?php if (strpos($request_uri, 'feedback.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/feedback.css">
+    <?php } elseif (strpos($request_uri, 'academic.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/academic.css">
     <?php } ?>
 </head>
 <body>
