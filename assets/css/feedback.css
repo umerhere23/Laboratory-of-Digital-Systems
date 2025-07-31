@@ -1,0 +1,183 @@
+/* Styling for feedback.php */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    animation: fadeIn 1s ease-out;
+}
+
+.title h2 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.text {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 1.05em;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.attention-text {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.attention-text h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.attention-text h2 {
+    font-size: 1.5em;
+}
+
+form#feedback {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form#feedback table {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+form#feedback td {
+    padding: 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+}
+
+form#feedback tr:last-child td {
+    border-bottom: none;
+}
+
+form#feedback td:first-child {
+    font-weight: bold;
+    color: #333;
+    width: 30%;
+}
+
+form#feedback select,
+form#feedback textarea,
+form#feedback input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+
+form#feedback textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.captcha-image {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.captcha-note {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.form-submit-container {
+    text-align: center;
+    width: 100%;
+}
+
+form#feedback input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form#feedback input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .title h2 {
+        font-size: 2em;
+    }
+
+    .text {
+        font-size: 0.95em;
+    }
+
+    form#feedback td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 8px 0;
+    }
+
+    form#feedback td:first-child {
+        padding-bottom: 0;
+    }
+
+    form#feedback select,
+    form#feedback textarea,
+    form#feedback input[type="text"] {
+        width: 100%;
+    }
+
+    .captcha-note {
+        font-size: 0.85em;
+    }
+}

@@ -77,7 +77,16 @@
     <?php } elseif (strpos($request_uri, 'background.php') !== false) { ?>
         <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/background.css">
     <?php } elseif (strpos($request_uri, 'mdresearch.php') !== false) { ?>
-        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/mdresearch.css">
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/mdresearch.css">   
+    <?php } elseif (strpos($request_uri, 'mdaffiliations.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/mdaffiliations.css">
+    <?php } elseif (strpos($request_uri, 'address.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/address.css">
+    <?php } elseif (strpos($request_uri, 'mdpublications.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/mdpublications.css">
+    <?php } ?>
+    <?php if (strpos($request_uri, 'feedback.php') !== false) { ?>
+        <link rel="stylesheet" href="<?php echo $base_path; ?>assets/css/feedback.css">
     <?php } ?>
 </head>
 <body>
@@ -93,12 +102,12 @@
                 <ul class="menu">
                     <li id="Home"><a href="index.php" class="parent"><span>Home</span></a></li>
                     <li id="Equipment"><a href="equip.php"><span>Laboratory Equipment</span></a></li>
-                    <li id="Schedule" class="has-dropdown"><a href="/schedule.php" ><span>Lab iTools</span></a>
+                    <li id="Schedule" class="has-dropdown"><a href="schedule.php" ><span>Lab iTools</span></a>
                         <ul>
                             <li> <a href="schedule.php" ><span>Laboratory Availability</span></a></li>
                             <li> <a href="i-time-slot.php"> <span> Laboratory i-timeslots </span></a></li>
                             <li> <a href="i-time-slot.php"> <span> Laboratory i-grades </span></a></li>
-                            <li> <a href="#"> <span> Laboratory i-examsII </span></a></li>
+                            <li> <a href="i-time-slot.php"> <span> Laboratory i-examsII </span></a></li>
                             <li> <a href="tests.php "> <span> Laboratory FREE i-examsII </span></a></li>
                             <li> <a href="i-time-slot.php"> <span> Laboratory i-presence </span></a></li>
                             <li> <a href="i-time-slot.php"> <span> Laboratory i-tasks </span></a></li>
@@ -114,7 +123,7 @@
                         </ul>
                     </li>
         
-                    <li id="Academic" class="has-dropdown"><a href="/academic.php" ><span>Academic</span></a>
+                    <li id="Academic" class="has-dropdown"><a href="academic.php" ><span>Academic</span></a>
                         <ul>
                             <li><a href="lessons.php" ><span>Courses</span></a></li>
                             <li><a href="thesis.php" ><span>Diploma Thesis</span></a></li>
@@ -124,22 +133,22 @@
                         </ul>
                     </li>
         
-                    <li id="Tools" class="has-dropdown"><a href="/tools.php"><span>Online Tools</span></a>
+                    <li id="Tools" class="has-dropdown"><a href="hdl.php"><span>Online Tools</span></a>
                         <ul>
-                         <li><a href="/hdl.php"><span>HDL Compiler & various generators that emit VHDL</span></a></li>
+                         <li><a href="hdl.php"><span>HDL Compiler & various generators that emit VHDL</span></a></li>
                         </ul>
                     </li>
         
-                    <li id="Staff" class="has-dropdown"><a href="/staff.php"><span>Staff</span></a>
+                    <li id="Staff" class="has-dropdown"><a href="profile.php"><span>Staff</span></a>
                         <ul>
-                            <li class="has-dropdown"><a href="/mdasyg/index.php"><span>Minas Dasygenis</span></a>
+                            <li class="has-dropdown"><a href="profile.php"><span>Minas Dasygenis</span></a>
                                 <ul>
                                     <li><a href="profile.php"><span>Introduction</span></a></li>
                                     <li><a href="background.php"><span>Background</span></a></li>
                                     <li><a href="mdresearch.php"><span>Research</span></a></li>
-                                    <li><a href="/mdasyg/mdthesis.php"><span>Diploma Thesis Supervision</span></a></li>
-                                    <li><a href="/mdasyg/mdaffiliations.php"><span>Affiliations</span></a></li>
-                                    <li><a href="/mdasyg/mdpublications.php"><span>Publications</span></a></li>
+                                    <li><a href="mdthesis.php"><span>Diploma Thesis Supervision</span></a></li>
+                                    <li><a href="mdaffiliations.php"><span>Affiliations</span></a></li>
+                                    <li><a href="mdpublications.php"><span>Publications</span></a></li>
                                 </ul>
                             </li>
                          <li class="has-dropdown"><span> Phd Candidates</span>
@@ -151,10 +160,10 @@
                          </li>
                         </ul>
                     </li>
-                    <li id="Communication" class="last has-dropdown"><a href="/address.php"><span>Communication</span></a>
+                    <li id="Communication" class="last has-dropdown"><a href="address.php"><span>Communication</span></a>
                         <ul>
-                            <li><a href="/address.php"><span>Laboratory Address</span></a></li>
-                            <li><a href="/feedback/"><span>Anonymous Form</span></a></li>
+                            <li><a href="address.php"><span>Laboratory Address</span></a></li>
+                            <li><a href="feedback.php"><span>Anonymous Form</span></a></li>
                         </ul>
                     </li>
                 </ul>
