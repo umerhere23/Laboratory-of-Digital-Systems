@@ -28,10 +28,18 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="container">
-            <p>© Developed by Lymperidis Efstathios. Supervised by Minas Dasygenis<br>
-            University of Western Macedonia , Department of Electrical and Computer Engineering. <a href="dpa.php">[ ΠΟΛΙΤΙΚΗ ΑΣΦΑΛΕΙΑΣ ΚΑΙ ΑΠΟΡΡΗΤΟΥ]</a></p>
-        </div>
+    <div class="container" style="color: #ecf0f1; font-size: 14px; text-align: center;">
+    <p style="margin: 0;">
+        © Developed by <span style="color: #f1c40f;">Christos Kostopoulos</span>. 
+        Supervised by <span style="color: #f1c40f;">Minas Dasygenis</span><br>
+        <span style="color: #bdc3c7;">University of Western Macedonia</span>, 
+        <span style="color: #bdc3c7;">Department of Electrical and Computer Engineering.</span> 
+        <a href="dpa.php" class="privacy-link" style="color: #f39c12; text-decoration: underline;">
+            [ ΠΟΛΙΤΙΚΗ ΑΣΦΑΛΕΙΑΣ ΚΑΙ ΑΠΟΡΡΗΤΟΥ ]
+        </a>
+    </p>
+</div>
+
     </div>
 </footer>
 

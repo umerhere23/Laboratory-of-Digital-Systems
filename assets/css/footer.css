@@ -81,4 +81,14 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9rem;
+}
+
+.privacy-link {
+    color: #ffffff; /* White color for the privacy policy link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: #3498db; /* Blue color on hover */
 } 
